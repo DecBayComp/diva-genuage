@@ -11,8 +11,6 @@ Localizing molecules in large images can generate a huge amount of data to proce
  
 EXPLAIN AVANTAGE COMBINAISON DES 2
 
-?TODO? ADD VIDEO COMPLETE PIPELINE 
-
 # Table of Contents
 - [Requirements](#requirements-and-installation)
 - [Import image](#import-image)
@@ -24,14 +22,15 @@ EXPLAIN AVANTAGE COMBINAISON DES 2
   * [Load your trajectories](#load-your-trajectories)
   * [Trajectories options](#trajectories-options)
 - [Virtual Reality](#virtual-reality)
+  * [Interact](#interact)
   * [Select trajectories](#select-trajectories)
 - [Example](#example)
-
 
 # Requirements and Installation
 DIVA is designed to run on the Windows 10 and 11 operating systems with at least OpenCL 2.0. We recommend using DIVA with an Intel i5 processor equivalent or better, at least 4GB RAM of memory, 300 MB of storage and a NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU). DIVA can be used with and without VR headset and is compatible with HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functions. You can find DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
 
 To install this new version of DIVA, load the ?TODO? folder and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
+ 
  
 # Import image
 ## Data requirements
@@ -43,7 +42,6 @@ To load a 4D image, DIVA requires Tagged Image File Format (TIFF) image files in
 Importation can be done in DIVA using the <img src="https://user-images.githubusercontent.com/49953723/211051703-d4e8065b-2d44-40a0-b7cf-70ec3de687f4.png" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
 
 If the image is a 4D image (i.e. with temporal information), this <img src="https://user-images.githubusercontent.com/49953723/211319952-7a64f9ac-4693-40b3-b8d3-bafe9faf6eb3.png" width="20px"/> icon  will appear in the ```Information``` panel to allow you to explore the different frames forwards <img src="https://user-images.githubusercontent.com/49953723/211320199-80d2be99-07aa-4fc4-8fda-a7df3d3ce677.png" width="20px"/> or backwards <img src="https://user-images.githubusercontent.com/49953723/211320192-f79a4f59-2ce4-48d3-9601-05a123a978ea.png" width="20px"/>.
-
  
 <img align="left" src="https://user-images.githubusercontent.com/49953723/211052080-a576c3a7-7718-4ded-b719-7586d79068d3.png" width="80px"/> 
  
@@ -53,8 +51,6 @@ If the image is a 4D image (i.e. with temporal information), this <img src="http
 ## Improve the visualization
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the ```Volume``` panel under <img src="https://user-images.githubusercontent.com/49953723/211052882-578af9f6-4ba9-47ee-90fb-ecb68dd2d0c3.png" width="20px"/> or <img src="https://user-images.githubusercontent.com/49953723/211052912-4d1e5c92-6694-4207-ba1b-d1f15a6c249e.png" width="20px"/> icon if the image has to channels. 
 
- <img align="left" src="/materials/videos/TF1D_lung_01_MSD.gif" width="480" height="270"/>
- 
 https://user-images.githubusercontent.com/49953723/211350518-a62a306f-fd42-4822-80bf-6ddefef23881.mp4
 
 As shown on the video above with a CT-scan of lung tumor from the [Medical Segmentation Decathlon Challenge database](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2), this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
@@ -75,18 +71,23 @@ To activate the point cloud trajectories interface go to the ```Advanced``` pane
  ## Trajectories options
 After loading, each point in the file will be added to the volume and rendered as Gaussian spheres as well as the trajectories which will be rendered as lines connecting the points. 
  
- Within the desktop interface you can see:
+ The desktop interface for point cloud trajectories is composed of:
  - ```timestep```: two sliders to control the interval of frames (only in the point clouds and trajectories - not in the raw image) to display.
  - ```point size```: one slider to control the size of gaussian spheres that represent each point.
  - ```selected trajectories```: the list of the trajectories selected in VR (see *Virtual Reality* section).
  
+ 
 # Virtual Reality
-TODO : 
+Switching to and from the VR mode is performed by clicking on <img src="https://user-images.githubusercontent.com/49953723/211378148-6eca762b-8e7f-4b31-8dcf-b114bb0ea25c.png" width="20px"/> in the top-left corner and then <img src="https://user-images.githubusercontent.com/49953723/211378358-7eb9f04b-9489-464b-9ce3-7dd08a826290.png" width="20px"/> or <img src="https://user-images.githubusercontent.com/49953723/211378719-2374eafb-7881-4047-906e-85631c2d1bd4.png" width="20px"/>. This will automatically launch SteamVR to activate the plugged VR headset. 
 
-point highligh vert quand passe dessus
-option crop 
+> /!\ The button will not respond if SteamVR is not installed.
+
+> *Remark*: to avoid possible crash, launch SteamVR before launching DIVA.
+
+ 
+## Interact
+ interaction avec le volume + clipper + point highligh vert quand passe dessus
 option changer de frame ? 
-
 
 
 ## Select trajectories
