@@ -56,6 +56,8 @@ Voxel color and opacity can be modified in real-time through a user-friendly tra
 
  <img align="left" src="/materials/videos/TF1D_lung_01_MSD.gif" width="480" height="270"/>
  
+https://user-images.githubusercontent.com/49953723/211350518-a62a306f-fd42-4822-80bf-6ddefef23881.mp4
+
 As shown on the video above with a CT-scan of lung tumor from the [Medical Segmentation Decathlon Challenge database](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2), this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details on the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR view. 
  
 For multichannel files, each channel possesses its own transfer function which can be activated by left clicking on the corresponding channel icon in the **Volume** panel. For 4D images, the transfer function will be applied to all frames. We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the <img alt="save_button" src="https://user-images.githubusercontent.com/49953723/211335017-aa3917ef-725d-43aa-ad49-9db8490adf69.png" width="60px"/> button in order to be able to re-open if necessary with the <img alt="open_button" src="https://user-images.githubusercontent.com/49953723/211335290-b61fce90-217e-4c95-941c-785f93ea8040.png" width="60px"/> button .
