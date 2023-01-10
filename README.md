@@ -47,7 +47,7 @@ If the image is a 4D image (i.e. with temporal information), this <img src="http
  
 > *Remark*: if you see this type of behavior after loading your image in DIVA, press R in your keyboard to reload the image and correct the rendering artefact.
 
-## Improve the visualization
+## Improve the visualisation
 Voxel color and opacity can be modified in real-time through a user-friendly transfer function interface located in the ```Volume``` panel under <img src="https://user-images.githubusercontent.com/49953723/211052882-578af9f6-4ba9-47ee-90fb-ecb68dd2d0c3.png" width="20px"/> or <img src="https://user-images.githubusercontent.com/49953723/211052912-4d1e5c92-6694-4207-ba1b-d1f15a6c249e.png" width="20px"/> icon if the image has two channels. 
 
 https://user-images.githubusercontent.com/49953723/211350518-a62a306f-fd42-4822-80bf-6ddefef23881.mp4
