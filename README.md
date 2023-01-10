@@ -1,6 +1,6 @@
 <div align="justify">
 
-# DIVA & GENUAGE : VIRTUAL REALITY TO CHECK POINT CLOUD TRAJECTORY
+# DIVA & GENUAGE : VR for image and point cloud trajectories
 Localizing molecules in large images can generate a huge amount of data to process. The exploration of these point clouds and trajectories to detect localization errors can therefore be very time consuming. This is why we decided to combine two platforms, **DIVA** and **Genuage** to visualize in virtual reality raw image overlayed with the trajectory data and thus allow a quick and easy exploration to check the validity of multidimensional point cloud data.
 
  <img align="left" src="https://user-images.githubusercontent.com/49953723/211052369-473243ed-088c-45d6-a74d-57218fe67cb1.png" width="160px"/>
