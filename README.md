@@ -3,7 +3,7 @@
 # DIVA & GENUAGE : VR for image and point cloud trajectories
 Localizing molecules in large images can generate a huge amount of data to process. The exploration of these point clouds and trajectories to detect localization errors can therefore be very time consuming. This is why we decided to combine two platforms, **DIVA** and **Genuage** to visualize in virtual reality raw image overlayed with the trajectory data and thus allow a quick and easy exploration to check the validity of multidimensional point cloud data.
 
- <img align="left" src="https://user-images.githubusercontent.com/49953723/211052369-473243ed-088c-45d6-a74d-57218fe67cb1.png" width="160px"/>
+ <img align="left" src="https://user-images.githubusercontent.com/49953723/211052369-473243ed-088c-45d6-a74d-57218fe67cb1.png" width="180px"/>
 
  **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D image stacks and enables efficient visualization and quantification in virtual reality (VR) without pre-treatment. For more details see the article [El Beheiry M., Godard C., Caporal C. et al. DIVA: natural navigation inside 3D images using virtual reality. *Journal of Molecular Biology*. (2020)](https://www.biorxiv.org/content/biorxiv/early/2020/04/10/2020.04.09.019935.full.pdf). <br/>
  
