@@ -69,12 +69,15 @@ DIVA requires a trajectory file in a .csv format with five colums: ```trajectory
 To activate the point cloud trajectories interface go to the ```Advanced``` panel and click on the <img alt="volume_sphere_icon" src="https://user-images.githubusercontent.com/49953723/211362394-697d6ef6-25eb-4b37-aa53-b43e4917a887.png" width="20px"/> icon. Trajectories data can be loaed with the <img alt="load_trajectories_button" src="https://user-images.githubusercontent.com/49953723/211362160-a96a8dd2-03df-45f2-8494-817545dfa14b.png" width="170px"/> button.
     
  ## Trajectories options
-After loading, each point in the file will be added to the volume and rendered as Gaussian spheres as well as the trajectories which will be rendered as lines connecting the points. 
  
- The desktop interface for point cloud trajectories is composed of:
+ <img align="right" src="/materials/videos/demo_trajectories_desktop_interface.gif" width="480" height="270"/> 
+ 
+After loading, each point in the file will be added to the volume and rendered as Gaussian spheres as well as the trajectories which will be rendered as lines connecting the points. 
+
+The desktop interface for point cloud trajectories is composed of:
  - ```timestep```: two sliders to control the interval of frames (only in the point clouds and trajectories - not in the raw image) to display.
  - ```point size```: one slider to control the size of gaussian spheres that represent each point.
- - ```selected trajectories```: the list of the trajectories selected in VR (see *Virtual Reality* section).
+ - ```selected trajectories```: the list of the trajectories selected in VR.
  
  
 # Virtual Reality
