@@ -36,8 +36,12 @@ To install this new version of DIVA, load the [diva folder](/diva) and execute D
 ## Data requirements
 To load a 4D image, DIVA requires Tagged Image File Format (TIFF) image files in 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be scaled or cropped via [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performances, use images that are located on your disk.
 
-?TODO? Manip pour mettre les datas entre 0 et 255 
-
+In order to have a fairly distributed logarithmic histogram (useful for applying the transfer function in DIVA), you may need to change the type of the image. The procedure in ImageJ/Fiji is as follows:
+ 1. Open your image
+ 2. Go to *Image/Type/8-bits*
+ 3. Export data in *File/Save as/Tiff*
+ 
+ 
 ## Load your image
 Importation can be done in DIVA using the <img src="https://user-images.githubusercontent.com/49953723/211051703-d4e8065b-2d44-40a0-b7cf-70ec3de687f4.png" width="20px"/> button with the *TIFF* option (in the top-left corner) which opens a file browser or by drag-and-dropping your TIFF file direclty. 
 
