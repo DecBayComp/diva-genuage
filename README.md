@@ -1,7 +1,7 @@
 <div align="justify">
 
 # DIVA & GENUAGE : VIRTUAL REALITY TO CHECK POINT CLOUD TRAJECTORY
-Localizing molecules in large images can generate a huge amount of data to process. The exploration of these point clouds and trajectories to detect localization errors can therefore be very time consuming. This is why we decided to combine two platforms, **DIVA** and **Genuage** to visualize in virtual reality the raw images overlayed with the trajectory data and thus allow a quick and easy exploration and check of multidimensional point cloud data.
+Localizing molecules in large images can generate a huge amount of data to process. The exploration of these point clouds and trajectories to detect localization errors can therefore be very time consuming. This is why we decided to combine two platforms, **DIVA** and **Genuage** to visualize in virtual reality raw image overlayed with the trajectory data and thus allow a quick and easy exploration to check the validity of multidimensional point cloud data.
 
  <img align="left" src="https://user-images.githubusercontent.com/49953723/211052369-473243ed-088c-45d6-a74d-57218fe67cb1.png" width="160px"/>
 
@@ -9,7 +9,6 @@ Localizing molecules in large images can generate a huge amount of data to proce
  
 **Genuage** is a plateform for visualizing and analyzing multidimensional point cloud data such those generated from Single Molecule Localization Microscopy (SMLM). SMLM refers to methods for generating super-resolution microscopy images (PALM, STORM, DNA-PAINT …) and Single Particle Tracking (SPT) data. Genuage is compatible with multidimensional localization data. For more details see the article [Blanc T., El Beheiry M., Caporal C. et al. Genuage: visualize and analyze multidimensional single-molecule point cloud data in virtual reality. *Nature Methods* 17, 1100–1102. (2020)](https://www.nature.com/articles/s41592-020-0946-1).
  
-EXPLAIN AVANTAGE COMBINAISON DES 2
 
 # Table of Contents
 - [Requirements](#requirements-and-installation)
@@ -74,21 +73,15 @@ The desktop interface for point cloud trajectories is composed of:
  - ```point size```: one slider to control the size of gaussian spheres that represent each point.
  - ```selected trajectories```: the list of the trajectories selected in VR.
  
- 
- 
-> <ins>Rendering information:</ins>
+> *Rendering information:*
 > 
 > Points are rendered with the following plasma texture <img src="https://user-images.githubusercontent.com/49953723/211572478-fa85b902-e5d0-46c5-b5e8-1113b85df7a0.png" width="80px"/> according to their positions in the frame. For example a point in the frame 1/50 will be dark purple while a point in the frame 50/50 will be yellow.
 > 
 > Trajectories are rendered with the following texture <img src="https://user-images.githubusercontent.com/49953723/211572514-ece8b422-1427-4b76-ab33-3bb58e3766bf.png" width="80px"/> according to their ids. For example a trajectory with a low id will be displayed in dark puple while a trajectory with a high id will be displayed in pink. This texture was chosen to facilitate the differentiation of trajectories when the number of trajectories is important. 
 > 
-> /!\ Only one frame of the raw image is displayed but trajectories are displayed
+> /!\ Only one frame of the raw image is displayed at a time while the points of the trajectories of several frames are displayed at the same time. Points of the actual frame of the raw image are displayed in green.
 
-xpliquer que toutes lestraj son taffichier dans plusieurs frames que que 1 frame d'image est afficché 
- dire que le frame actuel les points sont en vert
  
- <img src="" width="20px"/>
-
 # Virtual Reality
 Switching to and from the VR mode is performed by clicking on <img src="https://user-images.githubusercontent.com/49953723/211378148-6eca762b-8e7f-4b31-8dcf-b114bb0ea25c.png" width="20px"/> in the top-left corner and then <img src="https://user-images.githubusercontent.com/49953723/211378358-7eb9f04b-9489-464b-9ce3-7dd08a826290.png" width="20px"/> or <img src="https://user-images.githubusercontent.com/49953723/211378719-2374eafb-7881-4047-906e-85631c2d1bd4.png" width="20px"/>. This will automatically launch SteamVR to activate the plugged VR headset. 
 
@@ -101,7 +94,7 @@ Interaction with the volume and trajectories can be done with the VR controller.
 ## Explore the data
 Open the VR menu by clicking on the <img src="https://user-images.githubusercontent.com/49953723/211567755-e1a703d4-bded-41e8-8991-8be9ca9b4018.png" width="20px"/> button of the VR controller, then click on the <img src="https://user-images.githubusercontent.com/49953723/211560765-d95b2def-f034-4b2a-ab24-f7aa9bf10d7e.png" width="20px"/> icon and <img src="https://user-images.githubusercontent.com/49953723/211561191-8dd5315f-ab5d-41f0-bea5-b1e3651c8d70.png" width="20px"/> icon. This will add icons on the controller, as in the desktop interface you can explore the different frames forwards <img src="https://user-images.githubusercontent.com/49953723/211320199-80d2be99-07aa-4fc4-8fda-a7df3d3ce677.png" width="20px"/> or backwards <img src="https://user-images.githubusercontent.com/49953723/211320192-f79a4f59-2ce4-48d3-9601-05a123a978ea.png" width="20px"/>. 
 
-> *Remark*: A point in the cloud is highlited in green when the controller passes over it. 
+> /!\ Changing the frame index too often in VR can cause the software to crash due to a memory allocation problem.
 
 ## Select trajectories
 Open the VR menu by clicking on the <img src="https://user-images.githubusercontent.com/49953723/211567755-e1a703d4-bded-41e8-8991-8be9ca9b4018.png" width="20px"/> button of the VR controller, then click on the <img src="https://user-images.githubusercontent.com/49953723/211562450-4aad4e08-7f16-4296-9bf3-a3f1dbda44bd.png" width="20px"/> icon and <img src="https://user-images.githubusercontent.com/49953723/211562470-2ee6dde3-0cbf-4bab-aa82-96b226812c91.png" width="20px"/> icon. 
@@ -110,6 +103,8 @@ Open the VR menu by clicking on the <img src="https://user-images.githubusercont
 - To remove a trajectory from the list of selected trajectories, go with the VR controller to the position of a point of the trajectory an click on the <img src="https://user-images.githubusercontent.com/49953723/211562979-fc2154d8-221b-4f11-bb45-ce31c771bf39.png" width="20px"/> icon on the controller. 
 
 Ids of selected trajectories are displayed under the panel ```Selected Trajectories``` on the desktop interface.
+
+ > *Remark*: A point in the cloud is highlited in green when the controller passes over it. 
 
 ## Export selected trajectories
 Exportation of the selected trajectories can be done on the desktop interface by clicking the <img src="https://user-images.githubusercontent.com/49953723/211569177-e09271e8-0930-4489-99e1-ea765edc5633.png" width="170px"/> button. Data is exported as a .csv file with the same format than the input file and contains the list of points of the selected trajectories.
