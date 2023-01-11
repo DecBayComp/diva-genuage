@@ -5,9 +5,9 @@ Localizing molecules in large images can generate a huge amounts of data to proc
 
  <img align="left" src="https://user-images.githubusercontent.com/49953723/211052369-473243ed-088c-45d6-a74d-57218fe67cb1.png" width="180px"/>
 
- **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D image stacks and enables efficient visualization and quantification in virtual reality (VR) without pre-treatment. For more details see the article [El Beheiry M., Godard C., Caporal C. et al. DIVA: natural navigation inside 3D images using virtual reality. *Journal of Molecular Biology*. (2020)](https://www.biorxiv.org/content/biorxiv/early/2020/04/10/2020.04.09.019935.full.pdf). <br/>
+The **DIVA** (Data Integration and Visualisation in Augmented and virtual environments) software is a user-friendly platform that generates volumetric reconstructions from raw 3D image stacks and enables efficient visualization and quantification in virtual reality (VR), without pre-treatment. For more details, please refer to [El Beheiry M., Godard C., Caporal C. et al. DIVA: natural navigation inside 3D images using virtual reality. *Journal of Molecular Biology*. (2020)](https://www.biorxiv.org/content/biorxiv/early/2020/04/10/2020.04.09.019935.full.pdf). <br/>
  
-**Genuage** is a plateform for visualizing and analyzing multidimensional point cloud data, for example data generated from Single Molecule Localization Microscopy (SMLM). SMLM refers to methods that generate super-resolution microscopy images (PALM, STORM, DNA-PAINT …) and Single Particle Tracking (SPT) data. Genuage is compatible with multidimensional localization data. For more details see the article [Blanc T., El Beheiry M., Caporal C. et al. Genuage: visualize and analyze multidimensional single-molecule point cloud data in virtual reality. *Nature Methods* 17, 1100–1102. (2020)](https://www.nature.com/articles/s41592-020-0946-1).
+**Genuage** is a plateform for visualizing and analyzing multidimensional point cloud data, for example data generated from Single Molecule Localization Microscopy (SMLM). SMLM refers to methods that generate super-resolution microscopy images (PALM, STORM, DNA-PAINT …) and Single Particle Tracking (SPT) data. Genuage is compatible with multidimensional localization data. For more details, please refer to [Blanc T., El Beheiry M., Caporal C. et al. Genuage: visualize and analyze multidimensional single-molecule point cloud data in virtual reality. *Nature Methods* 17, 1100–1102. (2020)](https://www.nature.com/articles/s41592-020-0946-1).
  
 
 # Table of Contents
@@ -31,16 +31,16 @@ DIVA is designed to run on the Windows 10 and 11 and requires OpenCL 2.0 or high
 - Intel i5 processor equivalent
 - 4GB RAM of memory
 - 300 MB of storage 
-- NVIDIA GeForce 900 Series or better Graphical Processing Unit (GPU).
+- NVIDIA GeForce 900 Series Graphical Processing Unit (GPU)
 
-DIVA can be used with and/or without a VR headset and is compatible with the HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. For each type of VR headsets you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functionnalities. You can find the DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
+DIVA can be used with and/or without a VR headset and is compatible with the HTC Vive, HTC Vive Pro, Oculus Rift, Oculus Rift S, Oculus Quest (with Link Cable) and Windows Mixed Reality headsets. For each type of VR headset you have to download the corresponding installation software (such as [ViveSetup](https://www.vive.com/fr/setup/pc-vr/) or [Oculus](https://www.oculus.com/setup/?locale=fr_FR)). In addition, [SteamVR](https://www.steamvr.com/fr/) is required to use VR functionnalities. You can find the DIVA user manual and all the information about the legacy software [here](https://diva.pasteur.fr/). 
 
 To install this new version of DIVA, download the [diva folder](/diva) and execute DIVA by double-clicking on the provided *diva.exe* file. DIVA will take a moment to load as it allocates memory (roughly 20–30 seconds).
  
  
 # Importing an image
 ## Data requirements
-To load a 4D image, DIVA requires Tagged Image File Format (TIFF) image files encoder over 8 or 16-bits. We recommend limiting the size of loaded files to less than 1 GB. Larger files may be downscaled or cropped using [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performances, use images that are located on your local disk.
+To load a 4D image, DIVA requires Tagged Image File Format (TIFF) files encoded over 8 or 16-bits. We recommend limiting the size of loaded files to 1 GB. Larger files may be downscaled or cropped using [ImageJ/Fiji](https://imagej.net/software/fiji/downloads) for example. Multichannel files organized using the ImageJ/Fiji convention are supported. To improve DIVA performances, use images that are located on your local disk.
 
 In order to have a fairly distributed logarithmic histogram (useful for applying the transfer function in DIVA), you may need to change the type of the image. The procedure in ImageJ/Fiji is as follows:
  1. Open your image
@@ -62,7 +62,7 @@ Voxel color and opacity can be modified in real-time through a user-friendly tra
 
 https://user-images.githubusercontent.com/49953723/211350518-a62a306f-fd42-4822-80bf-6ddefef23881.mp4
 
-As shown on the video above with a CT-scan of lung tumor from the [Medical Segmentation Decathlon Challenge database](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2), this interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details in the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR views. 
+As shown in the video above, with a CT-scan of a lung tumor from the [Medical Segmentation Decathlon Challenge database](https://drive.google.com/drive/folders/1HqEgzS8BV2c7xYNrZdEAnrHk7osJJ--2), the interface is composed of the image histogram in gray, one white curve for the opacity and one color bar. Each of them are defined with control points which can be adjusted by dragging with the left mouse button (more details in the [DIVA user manual](https://diva.pasteur.fr/wp-content/uploads/2019/09/diva-viewer-manual.pdf)). The basic principle of the transfer function is that each pixel of the histogram under the curve will be displayed with the corresponding color in the color bar, and each pixel above the curve will be disabled in the 3D and VR views. 
  
 For multichannel files, each channel has its own transfer function which can be activated by left clicking on the corresponding channel icon in the ```Volume``` panel. For 4D images, the transfer function will be applied to all frames. We recommend you to customize this transfer function to highlight your object of interest and save it as .json file using the <img alt="save_button" src="https://user-images.githubusercontent.com/49953723/211335017-aa3917ef-725d-43aa-ad49-9db8490adf69.png" width="60px"/> button in order to be able to re-open it if necessary using the <img alt="open_button" src="https://user-images.githubusercontent.com/49953723/211335290-b61fce90-217e-4c95-941c-785f93ea8040.png" width="60px"/> button.
 
@@ -99,7 +99,7 @@ Switching to and from the VR mode is performed by clicking on <img src="https://
 
 https://user-images.githubusercontent.com/49953723/211558891-5d6f1e67-8a8f-4af7-bb9a-69b46f88bb18.mp4
 
-Interaction with the volume and trajectories can be achieved with the VR controller.
+Interaction with the volume and trajectories can be achieved using the VR controller.
 
 ## Explore the data
 Open the VR menu by clicking on the <img src="https://user-images.githubusercontent.com/49953723/211567755-e1a703d4-bded-41e8-8991-8be9ca9b4018.png" width="20px"/> button of the VR controller, then click on the <img src="https://user-images.githubusercontent.com/49953723/211560765-d95b2def-f034-4b2a-ab24-f7aa9bf10d7e.png" width="20px"/> icon and <img src="https://user-images.githubusercontent.com/49953723/211561191-8dd5315f-ab5d-41f0-bea5-b1e3651c8d70.png" width="20px"/> icon. This will add icons on the controller, as in the desktop interface you can explore the different frames forwards <img src="https://user-images.githubusercontent.com/49953723/211320199-80d2be99-07aa-4fc4-8fda-a7df3d3ce677.png" width="20px"/> or backwards <img src="https://user-images.githubusercontent.com/49953723/211320192-f79a4f59-2ce4-48d3-9601-05a123a978ea.png" width="20px"/>. 
