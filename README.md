@@ -81,6 +81,7 @@ After loading, each point in the file will be added to the volume and rendered a
 The desktop interface for point cloud trajectories is composed of:
  - ```timestep```: two sliders to control the interval of frames (of point clouds and trajectories) to display.
  - ```point size```: one slider to control the size of Gaussian spheres that represent each point.
+ - ```play animation```: a button to launch an animation of all frames of all trajectories.
  - ```selected trajectories```: the list of the trajectories selected in VR.
  
 > *Rendering information:*
